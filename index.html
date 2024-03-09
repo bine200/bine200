@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>رمضان 2024 🌜</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <link rel="ICON" href="https://i.postimg.cc/Dw5k70h6/Designer-2-removebg-preview.png">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Kufam:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <nav class="navbar">
+    <ul>
+        
+      <img src="https://scontent.fcai20-6.fna.fbcdn.net/v/t39.30808-1/240534394_633292228059781_6569341136890931913_n.jpg?stp=dst-jpg_s200x200&_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=8klljeXCW24AX8V_-ZR&_nc_ht=scontent.fcai20-6.fna&oh=00_AfCw8Z4LeOx1DqzyThowdZ73vbK3dOCO9jT1LN4v2MaLQQ&oe=65F177C9" alt="صورة مصغرة">
+      <li><a href="https://www.facebook.com/bine.my2000" target="_blank"> باين علي</a></li>
+      <img class="imr" src="./image-removebg-preview (1).png" alt="فلسطين">
+      <li><a href="https://youtu.be/f0oy-NicIgE?si=1RZwtoYn_84sgdOU" target="_blank">فلسطين</a> </li>
+      <li><a href="https://idyllic-lolly-d50404.netlify.app/" target="_blank">التوقيت</a></li>
+      <img class="ime" src="./image-removebg-preview (3).png" alt="فلسطين">
+      <li><a class="word" href="#">رمضان كريم</a></li>
+    </ul>
+  </nav>
+  
+<header>
+  <h1>إِمْسَاكِيَّة رَمَضَانْ</h1>
+</header>
+
+  <div id="calendar"></div>
+  <table id="additionalInfoTable" class="additional-info-table"></table>
+  <table id="prayerTimes" class="prayer-table"></table>
+  <div id="countdown"></div>
+  <div id="eidInfo"></div>
+  
+  <footer>
+
+
+
+    <audio id="myAudio">
+        <source src="" type="audio/mpeg">
+    </audio>
+
+
+  </footer>
+
+  <script>
+    var songs = [
+            "./Wa7wy_Ya_Wa7wy.mp3",
+            "./Elsolasy_Elmareh_-_Afraho_Ya_Banaet.mp3",
+            "./حسين الجسمي - رمضان في مصر حاجة تانية (اورنچ رمضان) _ 2021.mp3",
+            "./رمضان جانا.mp3",
+            "./هاتوا الفوانيس يا ولاد - محمد فوزي.mp3",
+            "./رمضان كريم وحوي يا وحوي.mp4.mp3",
+            "./محمد منير - رمضان جنه _ Mohamed Mouner - Ramdan Gana.mp3"
+        ]; // استبدل المسارات بمسارات الأغاني الخاصة بك
+
+        var audio = document.getElementById("myAudio");
+        var word = document.querySelector(".word");
+
+        word.addEventListener("click", function() {
+            var randomIndex = Math.floor(Math.random() * songs.length);
+            var randomSong = songs[randomIndex];
+            audio.src = randomSong;
+            audio.play();
+        });
+</script>
+
+  <script defer src="index.js"></script>
+  
+</body>
+</html>
